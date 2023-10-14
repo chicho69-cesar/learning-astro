@@ -1,0 +1,32 @@
+{
+  "name": "astro-course",
+  "version": "1.0.0",
+  "description": "Curso de Astro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "sui-mono commit"
+  },
+  "workspaces": [
+    "projects/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chicho69-cesar/learning-astro.git"
+  },
+  "keywords": [
+    "Astro",
+    "Web",
+    "Front-End",
+    "JavaScript"
+  ],
+  "author": "Cesar Villalobos Olmos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chicho69-cesar/learning-astro/issues"
+  },
+  "homepage": "https://github.com/chicho69-cesar/learning-astro#readme",
+  "dependencies": {
+    "@s-ui/mono": "2.41.0"
+  }
+}
