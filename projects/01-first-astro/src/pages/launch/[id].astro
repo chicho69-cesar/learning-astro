@@ -1,0 +1,50 @@
+---
+/* La función especial getStaticPaths es igual que en Next cuando queremos
+obtener todas las posibles rutas para generarlas de manera estática, y
+debemos de exportar un array con objetos que tengan la propiedad params
+donde tendremos los params de la ruta, dentro del propiedad params
+ponemos un objeto con los parámetros */
+/* export async function getStaticPaths() {
+  const launches = await getLatestLaunches()
+
+  return launches.map((launch) => ({
+    params: { id: launch.id }
+  }))
+} */
+
+/* Usamos la propiedad prerender cuando en el archivo astro.config ponemos
+la propiedad output en server o hybrid para tener contenido que funciona en
+Server Side */
+export const prerender = false // false -> SSR, true -> SSG
+
+import { getLaunchById/* , getLatestLaunches */ } from '../../services/spacex'
+import type { Doc } from '../../types/api'
+import Layout from '../../layouts/Layout.astro'
+
+const { id } = Astro.params
+
+let launch: Doc | undefined
+if (id) launch = await getLaunchById({ id })
+---
+
+<Layout title={`SpaceX Launch${launch ? ` | ${launch.name}` : ''}`}>
+  <section class="w-full grid place-content-center">
+    <article class="flex flex-row flex-nowrap gap-12 items-center justify-center">
+      <img
+        src={launch?.links?.patch.large}
+        alt={launch?.name}
+        class="w-72 h-auto"
+      />
+
+      <div class="w-96">
+        <h2 class="text-4xl text-white font-bold">
+          Launch #{launch?.flight_number}
+        </h2>
+
+        <p class="text-lg">
+          {launch?.details}
+        </p>
+      </div>
+    </article>
+  </section>
+</Layout>
