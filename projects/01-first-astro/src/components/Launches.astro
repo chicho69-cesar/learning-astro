@@ -6,6 +6,7 @@ const launches = await getLatestLaunches()
 ---
 
 <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+  <!-- Hacemos un mapping de los resultados -->
   {launches.map((launch) => (
     <CardLaunch
       id={launch.id}

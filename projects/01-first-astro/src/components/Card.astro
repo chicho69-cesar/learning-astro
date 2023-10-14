@@ -1,10 +1,13 @@
 ---
+/* Creamos las props del componente */
 interface Props {
 	title: string;
 	body: string;
 	href: string;
 }
 
+/* El objeto Astro es un objeto global que nos provee de muchas herramientas
+para nuestro proyecto de Astro */
 const { href, title, body } = Astro.props;
 ---
 

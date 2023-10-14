@@ -7,6 +7,6 @@ export default defineConfig({
   integrations: [
     tailwind(),
     preact(),
-  ],
-  output: 'hybrid'
+  ], // Agregamos integraciones
+  output: 'hybrid' // Activamos server side rendering, options: [ 'server' | 'hybrid' | 'client']
 })

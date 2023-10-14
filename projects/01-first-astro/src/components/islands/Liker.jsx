@@ -1,5 +1,6 @@
 import { useState } from 'preact/hooks'
 
+/* Este componente va a ser una isla interactiva */
 export default function Liker() {
   const [like, setLike] = useState(false)
 

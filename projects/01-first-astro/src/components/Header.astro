@@ -15,10 +15,17 @@ import Liker from './islands/Liker'
     </p>
   </div>
 
+  <!-- Mandamos llamar a nuestra isla interactiva, donde la directiva
+  transition:persist nos ayuda a que el estado de la isla se mantenga aun
+  cuando navegamos de una pagina a otra.
+  La directiva client nos ayuda a decirle a astro que el componente es una
+  isla interactiva y no una estática, y en este caso va a ser interactiva
+  una vez que es visible en pantalla -->
   <Liker transition:persist client:visible />
 
   <nav class="flex flex-col items-center justify-between w-full text-center md:flex-row">
     <HeaderButton href="/">
+      <!-- Agregamos este elemento a un named slot -->
       <svg slot="before" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
         <path d="M4 13a8 8 0 0 1 7 7a6 6 0 0 0 3 -5a9 9 0 0 0 6 -8a3 3 0 0 0 -3 -3a9 9 0 0 0 -8 6a6 6 0 0 0 -5 3"></path>
