@@ -1,10 +1,11 @@
 ---
-import HeaderButton from "./HeaderButton.astro"
-console.log('JavaScript')
+import HeaderButton from './HeaderButton.astro'
+import Liker from './islands/Liker'
+// console.log('JavaScript')
 ---
 
 <header class="py-8 px-4 mx-auto max-w-3xl lg:py-16 lg:px-6">
-  <div class="mx-auto text-center mb-8 lg:mb-16">
+  <div class="mx-auto text-center mb-8 lg:mb-12">
     <h2 class="mb-4 text-5xl tracking-tight font-extrabold text-white">
       SpaceX Launches 🚀
     </h2>
@@ -13,6 +14,8 @@ console.log('JavaScript')
       All the information about SpaceX Launches
     </p>
   </div>
+
+  <Liker transition:persist client:visible />
 
   <nav class="flex flex-col items-center justify-between w-full text-center md:flex-row">
     <HeaderButton href="/">
