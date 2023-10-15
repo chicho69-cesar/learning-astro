@@ -11,20 +11,26 @@ importers:
   projects/01-first-astro:
     dependencies:
       '@astrojs/preact':
-        specifier: ^3.0.1
+        specifier: 3.0.1
         version: 3.0.1(@babel/core@7.23.2)(preact@10.18.1)(vite@4.4.11)
       '@astrojs/tailwind':
-        specifier: ^5.0.2
+        specifier: 5.0.2
         version: 5.0.2(astro@3.3.0)(tailwindcss@3.3.3)
       astro:
         specifier: 3.3.0
         version: 3.3.0
       preact:
-        specifier: ^10.18.1
+        specifier: 10.18.1
         version: 10.18.1
       tailwindcss:
-        specifier: ^3.3.3
+        specifier: 3.3.3
         version: 3.3.3
+
+  projects/02-astro-blog:
+    dependencies:
+      astro:
+        specifier: ^3.3.0
+        version: 3.3.0
 
 packages:
 
