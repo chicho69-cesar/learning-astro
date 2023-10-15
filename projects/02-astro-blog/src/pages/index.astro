@@ -1,8 +1,17 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import Greeting from '../components/islands/Greeting'
 ---
 
 <Layout title="Astro Blog">
-	<h1>Astro</h1>
-	<p>Hello World! from Astro</p>
+	<h1>El impresionante titulo de mi Blog!</h1>
+	
+	<Greeting
+		client:load
+		messages={[
+			"Hola",
+			"Qué tal",
+			"Hola a todos",
+		]}
+	/>
 </Layout>
