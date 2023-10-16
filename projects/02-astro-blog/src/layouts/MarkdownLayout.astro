@@ -7,7 +7,7 @@ const { frontmatter } = Astro.props
 <Layout title={frontmatter.title}>
   <!-- <h1> {frontmatter.title}</h1> -->
   
-  <p>{frontmatter.pubDate.slice(0,10)}</p>
+  <p>{frontmatter.pubDate.toString().slice(0,10)}</p>
   <p><em>{frontmatter.description}</em></p>
   <p>Escrito por: {frontmatter.author}</p>
   
@@ -21,7 +21,11 @@ const { frontmatter } = Astro.props
 
   <div class="tags">
     {frontmatter.tags.map((tag) => (
-      <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
+      <p class="tag">
+        <a href={`/tags/${tag}`}>
+          {tag}
+        </a>
+      </p>
     ))}
   </div>
 
@@ -32,6 +36,7 @@ const { frontmatter } = Astro.props
   a {
     color: #00539F;
     text-decoration: none;
+    padding: .5em 1em;
   }
 
   .tags {
@@ -43,7 +48,6 @@ const { frontmatter } = Astro.props
     margin: 0.25em;
     border: dotted 1px #a1a1a1;
     border-radius: .5em;
-    padding: .5em 1em;
     font-size: 1.15em;
     background-color: #F8FCFD;
   }

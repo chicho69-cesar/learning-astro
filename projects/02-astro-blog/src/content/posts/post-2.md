@@ -1,6 +1,6 @@
 ---
 title: Mi segunda publicación en el blog
-layout: '../../layouts/MarkdownLayout.astro'
+# layout: '../../layouts/MarkdownLayout.astro'
 author: Alumno de Astro
 description: 'Después de aprender un poco de Astro, ¡no podía parar!'
 image:

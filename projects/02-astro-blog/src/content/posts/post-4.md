@@ -1,5 +1,5 @@
 ---
-layout: '../../layouts/MarkdownLayout.astro'
+# layout: '../../layouts/MarkdownLayout.astro'
 title: 'Mi cuarta entrada en el blog'
 author: 'Astro alumno'
 pubDate: 2022-08-08
