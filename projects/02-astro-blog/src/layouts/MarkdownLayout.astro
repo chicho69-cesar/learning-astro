@@ -1,5 +1,6 @@
 ---
 import Layout from './Layout.astro'
+import { fade } from 'astro:transitions'
 
 const { frontmatter } = Astro.props
 ---
@@ -8,8 +9,10 @@ const { frontmatter } = Astro.props
   <!-- <h1> {frontmatter.title}</h1> -->
   
   <p>{frontmatter.pubDate.toString().slice(0,10)}</p>
-  <p><em>{frontmatter.description}</em></p>
-  <p>Escrito por: {frontmatter.author}</p>
+  <p transition:animate={fade({ duration: '2s' })}>
+    <em>{frontmatter.description}</em>
+  </p>
+  <p>Escrito por: <a href="/about/">{frontmatter.author}</a></p>
   
   <img
     src={frontmatter.image.url}
