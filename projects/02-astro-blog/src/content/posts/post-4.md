@@ -2,8 +2,8 @@
 # layout: '../../layouts/MarkdownLayout.astro'
 title: 'Mi cuarta entrada en el blog'
 author: 'Astro alumno'
-pubDate: 2022-08-08
 description: 'Esta entrada aparecerá sola!'
+pubDate: 2022-08-08
 image:
   url: 'https://docs.astro.build/default-og-image.png'
   alt: "La palabra 'astro' contra una ilustración de planetas y estrellas."

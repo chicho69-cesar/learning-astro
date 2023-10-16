@@ -1,9 +1,9 @@
 ---
 title: 'Mi primera publicación en el blog'
 # layout: '../../layouts/MarkdownLayout.astro'
-pubDate: 2022-07-01
-description: 'Este es la primera publicación de mi nuevo blog Astro.'
 author: 'Astro alumno'
+description: 'Este es la primera publicación de mi nuevo blog Astro.'
+pubDate: 2022-07-01
 image:
   url: 'https://docs.astro.build/assets/full-logo-light.png'
   alt: 'El logotipo completo de Astro.'

@@ -1,5 +1,5 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '../layouts/Layout.astro'
 
 const identity = {
   firstName: 'Cesar',
@@ -51,13 +51,13 @@ const textCase = 'uppercase'
 
 <style define:vars={{ skillColor, fontWeight, textCase }}>
   h1 {
-    color: purple;
-    font-size: 4rem;
+    color: purple
+    font-size: 4rem
   }
 
   .skill {
-    color: var(--skillColor);
-    font-weight: var(--fontWeight);
-    text-transform: var(--textCase);
+    color: var(--skillColor)
+    font-weight: var(--fontWeight)
+    text-transform: var(--textCase)
   }
 </style>

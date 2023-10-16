@@ -1,9 +1,11 @@
 ---
-
 ---
 
 <div transition:animate="slide" class="nav-links">
   <a href="/">Inicio</a>
+  <!-- Cuando usamos la directiva data-astro-reload lo que hacemos
+  es decirle a Astro que a pesar de que haya ViewTransitions activadas
+  el navegador va a hacer un Browser Full Refresh -->
   <a href="/about/" data-astro-reload>Sobre mi</a>
   <a href="/blog/">Blog</a>
   <a href="/tags/">Etiquetas</a>

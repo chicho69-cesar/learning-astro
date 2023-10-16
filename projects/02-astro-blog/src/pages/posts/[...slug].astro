@@ -1,8 +1,11 @@
 ---
-import { getCollection } from 'astro:content'
+/* Cuando creamos una ruta con props routing [...path] la path puede tomar
+cualquier valor, desde /a/b/c/d, a/b/c, /a/12, /ab, /, etc. */
+import { getCollection } from 'astro:content' // Utilidad para usar content collections
 import MarkdownLayout from '../../layouts/MarkdownLayout.astro'
 
 export async function getStaticPaths() {
+  /* Obtenemos las entradas de la colección definida de posts */
   const blogEntries = await getCollection('posts')
 
   return blogEntries.map((entry) => ({

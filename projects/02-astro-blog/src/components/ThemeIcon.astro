@@ -9,6 +9,11 @@
 </button>
 
 <script is:inline>
+  /* Cuando usamos un script en un componente de Astro cuando estamos 
+  usando ViewTransitions API, debemos agregar el evento de que la pagina
+  ya fue cargada por astro, debido a que el script solo se carga una sola
+  vez en un SPA, por lo que debemos asegurarnos que en cada navegación se
+  vuelva a ejecutar el script */
   document.addEventListener('astro:page-load', () => {
     const theme = (() => {
       if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
@@ -43,6 +48,11 @@
 </script>
 
 <script>
+  /* El evento after-swap hace lo mismo que page-load, solo que page-load
+  ejecuta el script hasta que todo el componente es cargado, mientras que
+  after-swap se ejecuta inmediatamente después de hacer la navegación
+  incluso antes de que se renderize el componente, en este caso lo 
+  necesitamos asi para que el tema dark se agregue lo mas rápido posible */
   document.addEventListener('astro:after-swap', () => {
     localStorage.theme === 'dark'
       ? document.documentElement.classList.add('dark')
