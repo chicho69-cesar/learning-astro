@@ -26,9 +26,9 @@ import Section from './Section.astro'
 
   <img 
     slot="background"
-    src="model-y.avif"
-    alt="Model Y"
-    id="bg-image-modely"
+    src="model-3.avif"
+    alt="Model 3"
+    id="bg-image-model3"
     class="h-full w-full object-cover object-center bg-image"
   />
 </Section>
@@ -41,11 +41,11 @@ import Section from './Section.astro'
     )
   }
 
-  let $imageElement = document.querySelector('#bg-image-modely') as HTMLImageElement
+  let $imageElement = document.querySelector('#bg-image-model3') as HTMLImageElement
 
   if (isEdge()) {
-    $imageElement.src = 'model-y.webp'
+    $imageElement.src = 'model-3.webp'
   } else {
-    $imageElement.src = 'model-y.avif'
+    $imageElement.src = 'model-3.avif'
   }
 </script>
