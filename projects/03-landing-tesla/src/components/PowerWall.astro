@@ -1,0 +1,44 @@
+---
+import Section from './Section.astro'
+---
+
+<Section
+  title="Solar y Powerwall"
+  subtitle="Energía para todos"
+  color="black"
+  id="powerwall"
+>
+  <div slot="footer" class="gap-x-6 flex mx-auto">
+    <a 
+      href="#"
+      class="border-[3px] border-gray-200 text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors hover:border-gray-500 hover:bg-gray-500"
+    >
+      Saber más
+    </a>
+  </div>
+
+  <img 
+    slot="background"
+    src="powerwall.avif"
+    alt="Solar y Powerwall"
+    id="bg-image-powerwall"
+    class="h-full w-full object-cover object-center bg-image"
+  />
+</Section>
+
+<script>
+  function isEdge() {
+    return (
+      navigator.userAgent.indexOf('Edge') > -1 ||
+      navigator.userAgent.indexOf('Edg') > -1
+    )
+  }
+
+  let $imageElement = document.querySelector('#bg-image-powerwall') as HTMLImageElement
+
+  if (isEdge()) {
+    $imageElement.src = 'powerwall.webp'
+  } else {
+    $imageElement.src = 'powerwall.avif'
+  }
+</script>
