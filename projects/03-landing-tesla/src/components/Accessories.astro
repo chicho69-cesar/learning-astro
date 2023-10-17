@@ -1,0 +1,45 @@
+---
+import Section from './Section.astro'
+---
+
+<Section
+  title="Accesorios"
+  subtitle=""
+  color="black"
+  id="accessories"
+  showFooterContent={true}
+>
+  <div slot="footer" class="gap-x-6 flex mx-auto">
+    <a
+      class="border-[3px] border-black bg-black text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors duration-300 hover:border-gray-800 hover:bg-gray-800"
+      href="#"
+    >
+      Comprar ahora
+    </a>
+  </div>
+
+  <img 
+    slot="background"
+    src="accessories.avif"
+    alt="Accesorios"
+    id="bg-image-accessories"
+    class="h-full w-full object-cover object-center bg-image"
+  />
+</Section>
+
+<script>
+  function isEdge() {
+    return (
+      navigator.userAgent.indexOf('Edge') > -1 ||
+      navigator.userAgent.indexOf('Edg') > -1
+    )
+  }
+
+  let $imageElement = document.querySelector('#bg-image-accessories') as HTMLImageElement
+
+  if (isEdge()) {
+    $imageElement.src = 'accessories.webp'
+  } else {
+    $imageElement.src = 'accessories.avif'
+  }
+</script>
