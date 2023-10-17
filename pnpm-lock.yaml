@@ -41,6 +41,18 @@ importers:
         specifier: 10.18.1
         version: 10.18.1
 
+  projects/03-landing-tesla:
+    dependencies:
+      '@astrojs/tailwind':
+        specifier: 5.0.2
+        version: 5.0.2(astro@3.3.0)(tailwindcss@3.3.3)
+      astro:
+        specifier: 3.3.0
+        version: 3.3.0
+      tailwindcss:
+        specifier: 3.3.3
+        version: 3.3.3
+
 packages:
 
   /@alloc/quick-lru@5.2.0:
