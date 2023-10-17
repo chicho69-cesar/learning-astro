@@ -3,32 +3,32 @@ import Section from './Section.astro'
 ---
 
 <Section
-  title="Model 3"
+  title="Model S"
   subtitle="Concertar una prueba de conducción"
   color="black"
-  id="model-3"
+  id="model-s"
 >
   <div slot="footer" class="gap-x-6 flex mx-auto">
     <a 
       href="#"
       class="border-[3px] border-gray-600 text-sm rounded font-medium text-gray-600 px-12 py-2 inline-block transition-colors hover:border-gray-500 hover:bg-gray-500 hover:text-white"
     >
-      Explorar inventario
+      Pedido personalizado
     </a>
 
     <a 
       href="#"
       class="bg-white text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center text-black"
     >
-      Pedido personalizado
+      Saber más
     </a>
   </div>
 
   <img 
     slot="background"
-    src="model-3.avif"
-    alt="Model 3"
-    id="bg-image-model3"
+    src="model-s.avif"
+    alt="Model S"
+    id="bg-image-models"
     class="h-full w-full object-cover object-center bg-image"
   />
 </Section>
@@ -41,11 +41,11 @@ import Section from './Section.astro'
     )
   }
 
-  let $imageElement = document.querySelector('#bg-image-model3') as HTMLImageElement
+  let $imageElement = document.querySelector('#bg-image-models') as HTMLImageElement
 
   if (isEdge()) {
-    $imageElement.src = 'model-3.webp'
+    $imageElement.src = 'model-s.webp'
   } else {
-    $imageElement.src = 'model-3.avif'
+    $imageElement.src = 'model-s.avif'
   }
 </script>
