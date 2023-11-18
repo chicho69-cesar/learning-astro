@@ -8,5 +8,19 @@
     "prerender",
     "renderize",
     "spacex"
-  ]
+  ],
+  "workbench.colorCustomizations": {
+    "commandCenter.border": "#15202b99",
+    "sash.hoverBorder": "#ff7d33",
+    "statusBar.background": "#ff5c00",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#cc4a00",
+    "statusBarItem.remoteBackground": "#ff5c00",
+    "statusBarItem.remoteForeground": "#15202b",
+    "titleBar.activeBackground": "#ff5c00",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveBackground": "#ff5c0099",
+    "titleBar.inactiveForeground": "#15202b99"
+  },
+  "peacock.color": "#ff5c00"
 }
