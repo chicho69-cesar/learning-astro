@@ -1,7 +1,10 @@
 <script>
-  import { cart } from '../../store'
+  import { cart, isCartOpen } from "../../store";
 </script>
 
-<button class="bg-slate-600 py-2 px-6 rounded-full font-bold text-white text-lg">
+<button
+  on:click={() => isCartOpen.set(!$isCartOpen)}
+  class="px-6 py-2 text-lg font-bold text-white rounded-full bg-slate-600"
+>
   Carrito - {Object.values($cart).length}
 </button>

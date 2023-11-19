@@ -1,0 +1,58 @@
+---
+import type { Product } from '../types/types.d'
+import AddToCart from './svelte/AddToCart.svelte'
+
+interface Props {
+  product: Product
+}
+
+const { product } = Astro.props
+---
+
+<article class="flex flex-col items-start justify-between gap-2 overflow-hidden bg-white rounded-md shadow-md">
+  <figure class="w-full aspect-[9/12] overflow-hidden">
+    <img
+      src={product.image}
+      alt={product.title}
+      class="w-full aspect-[9/12] object-cover object-center hover:scale-125 transition"
+    />
+  </figure>
+
+  <div class="subgrid">
+    <main class="px-2 py-1">
+      <h2 class="mb-1 text-xl font-medium">
+        {
+          product.title.length > 30
+            ? product.title.slice(0, 30) + "..."
+            : product.title
+        }
+      </h2>
+
+      <p class="text-base font-sans text-gray-700">
+        {
+          product.description.length > 80
+            ? product.description.slice(0, 80) + "..."
+            : product.description
+        }
+      </p>
+    </main>
+
+    <footer class="p-2 flex flex-row justify-between items-center gap-2">
+      <AddToCart client:load product={product} />
+      
+      <span class="text-2xl font-semibold text-slate-700">
+        ${product.price}
+      </span>
+    </footer>
+  </div>
+</article>
+
+<style>
+	.subgrid {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(1, 1fr auto);
+		gap: 0.125rem;
+		height: 25%;
+	}
+</style>
