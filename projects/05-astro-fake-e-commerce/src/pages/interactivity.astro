@@ -1,0 +1,44 @@
+---
+import '../styles/global.css'
+
+import Layout from "../layouts/Layout.astro"
+import PreactCounter from "../components/preact/PreactCounter"
+import ReactCounter from "../components/react/ReactCounter"
+import SolidCounter from "../components/solid/SolidCounter"
+import SvelteCounter from "../components/svelte/SvelteCounter.svelte"
+import VueCounter from "../components/vue/VueCounter.vue"
+---
+
+<Layout title="Interactivity">
+  <section class="flex flex-row justify-between items-center flex-wrap">
+    <PreactCounter client:visible>
+      <h1 class="text-purple-700 font-medium">
+        Hello from Preact!
+      </h1>
+    </PreactCounter>
+
+    <ReactCounter client:visible>
+      <h1 class="text-blue-700 font-medium">
+        Hello from React!
+      </h1>
+    </ReactCounter>
+
+    <SolidCounter client:visible>
+      <h1 class="text-blue-900 font-medium">
+        Hello from SolidJS!
+      </h1>
+    </SolidCounter>
+
+    <SvelteCounter client:visible>
+      <h1 class="text-orange-600 font-medium">
+        Hello from Svelte!
+      </h1>
+    </SvelteCounter>
+
+    <VueCounter client:visible>
+      <h1 class="text-green-700 font-medium">
+        Hello from Vue!
+      </h1>
+    </VueCounter>
+  </section>
+</Layout>
