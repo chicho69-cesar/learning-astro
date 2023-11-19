@@ -1,0 +1,33 @@
+---
+import CartInfo from './svelte/CartInfo.svelte'
+---
+
+<header class="w-full bg-white py-6 shadow">
+  <section class="container w-5/6 mx-auto flex flex-row justify-between items-center">
+    <h1 class="text-4xl font-bold text-slate-700 font-sans">
+      Fake
+    </h1>
+
+    <nav>
+      <ul class="flex justify-center items-center gap-4">
+        <li>
+          <a href="/" class="py-1 px-2 font-medium hover:bg-gray-200 hover:shadow rounded-sm">
+            Inicio
+          </a>
+        </li>
+        <li>
+          <a href="/" class="py-1 px-2 font-medium hover:bg-gray-200 hover:shadow rounded-sm">
+            Acerca de
+          </a>
+        </li>
+        <li>
+          <a href="/" class="py-1 px-2 font-medium hover:bg-gray-200 hover:shadow rounded-sm">
+            Interactividad
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <CartInfo client:visible />
+  </section>
+</header>

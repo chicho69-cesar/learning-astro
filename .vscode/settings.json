@@ -5,9 +5,11 @@
     "chicho",
     "Elon",
     "frontmatter",
+    "nanostores",
     "prerender",
     "renderize",
-    "spacex"
+    "spacex",
+    "tailwindcss"
   ],
   "workbench.colorCustomizations": {
     "commandCenter.border": "#15202b99",
