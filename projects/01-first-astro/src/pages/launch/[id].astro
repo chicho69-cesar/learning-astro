@@ -35,6 +35,7 @@ if (id) launch = await getLaunchById({ id })
         src={launch?.links?.patch.large}
         alt={launch?.name}
         class="w-72 h-auto"
+        transition:name={`launch-${id}`}
       />
 
       <div class="w-96">
