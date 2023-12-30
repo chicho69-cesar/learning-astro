@@ -177,6 +177,12 @@ importers:
       astro: 4.0.8
       tailwindcss: 3.4.0
 
+  projects/09-esland-web:
+    specifiers:
+      astro: 4.0.8
+    dependencies:
+      astro: 4.0.8
+
 packages:
 
   /@aashutoshrathi/word-wrap/1.2.6:
