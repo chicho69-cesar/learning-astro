@@ -1,5 +1,6 @@
 # build output
 dist/
+music/
 
 # generated types
 .astro/
