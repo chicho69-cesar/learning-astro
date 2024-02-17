@@ -1,0 +1,280 @@
+{
+  "basics": {
+    "name": "Cesar Villalobos Olmos",
+    "label": "Ingeniero en Tecnologías de la Información y Comunicaciones, Full Stack Developer +3 años de experiencia creando proyectos y participando en eventos de Desarrollo de Software",
+    "image": "/me.webp",
+    "email": "villalobosolmoscesar@gmail.com",
+    "phone": "+52 3461099207",
+    "url": "https://github.com/chicho69-cesar",
+    "summary": "Ingeniero en Tecnologías de la Información y Comunicaciones, Full Stack Developer con +3 años de experiencia creando proyectos, como freelance y participante de eventos de Desarrollo de Software como Hackatones. Actualmente trabajo como líder de equipo en la Cédula Académica de Desarrollo de Software del Instituto Tecnológico de Aguascalientes (CADSITA). Vivo en Aguascalientes, México y estoy abierto a cualquier oportunidad de trabajo.",
+    "location": {
+      "address": "",
+      "postalCode": "52200",
+      "city": "Aguascalientes",
+      "countryCode": "MX",
+      "region": "México"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "cesarvillalobosolmos",
+        "url": "https://www.linkedin.com/in/cesarvillalobosolmos/"
+      },
+      {
+        "network": "X",
+        "username": "chicho69_cesar",
+        "url": "https://x.com/chicho69_cesar"
+      },
+      {
+        "network": "GitHub",
+        "username": "chicho69-cesar",
+        "url": "https://github.com/chicho69-cesar"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "CADSITA",
+      "position": "Liber de equipo de desarrollo",
+      "url": "https://aguascalientes.tecnm.mx/",
+      "startDate": "2023-08-26",
+      "endDate": null,
+      "summary": "Líder de equipo de desarrollo Back-End, trabajando en desarrollo de proyectos emergentes, utilizando tecnologías innovadoras y altamente demandadas en la industria.",
+      "highlights": [
+        "Started the company"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": [
+        "Awarded 'Volunteer of the Month'"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Instituto Tecnológico de Aguascalientes",
+      "url": "https://aguascalientes.tecnm.mx/",
+      "area": "Ingeniería en Tecnologías de la Información y Comunicaciones",
+      "studyType": "Engineering",
+      "startDate": "2020-08-08",
+      "endDate": "2024-12-31",
+      "score": "98.4",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    },
+    {
+      "institution": "Centro de Bachillerato Tecnológico Industrial y de Servicios (CBTis) #247",
+      "url": "https://aguascalientes.tecnm.mx/",
+      "area": "Técnico en Programación",
+      "studyType": "Bachelor",
+      "startDate": "2017-08-16",
+      "endDate": "2020-07-01",
+      "score": "9.9",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Backend", "Fullstack"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Midlevel",
+      "keywords": [
+        "Desarrollo Web", "Backend", "JavaScript", "Servidor"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Midlevel",
+      "keywords": [
+        "Control de Versiones", "Colaboración", "Código Fuente"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones", "Colaboración", "Código Fuente", "Git"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "level": "Midlevel",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
+      ]
+    },
+    {
+      "name": "Python",
+      "level": "Midlevel",
+      "keywords": [
+        "Backend", "Machine Learning", "Data Science"
+      ]
+    },
+    {
+      "name": "Docker",
+      "level": "Midlevel",
+      "keywords": [
+        "Backend", "Servidor"
+      ]
+    },
+    {
+      "name": "C#",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web", "Backend"
+      ]
+    },
+    {
+      "name": ".NET",
+      "level": "Midlevel",
+      "keywords": [
+        "Desarrollo Web", "Fullstack", "Bases de Datos", "Servidor"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Midlevel"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Ganadería el Infierno",
+      "isActive": true,
+      "description": "Tienda en linea para la venta de ganado, con productos, auth y dashboard admin.",
+      "highlights": [
+        "E-Commerce",
+        "Astro"
+      ],
+      "url": "https://ganaderia-el-infierno.vercel.app/",
+      "github": "https://github.com/Congal-Club/ganaderia-el-infierno"
+    },
+    {
+      "name": "Neto's House",
+      "isActive": true,
+      "description": "Pagina web para vivienda con horarios y roles para la correcta convivencia de los inclinos.",
+      "highlights": [
+        "Usuarios activos constantes",
+        "React",
+        "JavaScript & TypeScript"
+      ],
+      "url": "https://chicho69-cesar.github.io/neto-house/",
+      "github": "https://github.com/chicho69-cesar/neto-house"
+    },
+    {
+      "name": "Expense Tracker",
+      "isActive": true,
+      "description": "Administración de los gastos de los usuarios, organizados por categorías y fechas.",
+      "highlights": [
+        "+20 usuarios activos",
+        "Servicio para los usuarios"
+      ],
+      "url": "https://react-apps-221cd.web.app/",
+      "github": "https://github.com/chicho69-cesar/expense-tracker"
+    }
+  ]
+}
