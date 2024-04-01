@@ -7,7 +7,6 @@
 Esquema del JSON de CV de <a href="https://jsonresume.org/schema/">jsonresume.org</a>
 </p>
 
-
 <p>
 Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz Jarocki</a>
 
@@ -38,10 +37,10 @@ Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz J
 <div align="center">
 
 ![Astro Badge](https://img.shields.io/badge/Astro-BC52EE?logo=astro&logoColor=fff&style=flat)
-![GitHub stars](https://img.shields.io/github/stars/midudev/minimalist-portfolio-json)
-![GitHub issues](https://img.shields.io/github/issues/midudev/minimalist-portfolio-json)
-![GitHub forks](https://img.shields.io/github/forks/midudev/minimalist-portfolio-json)
-![GitHub PRs](https://img.shields.io/github/issues-pr/midudev/minimalist-portfolio-json)
+![GitHub stars](https://img.shields.io/github/stars/chicho69-cesar/learning-astro)
+![GitHub issues](https://img.shields.io/github/issues/chicho69-cesar/learning-astro)
+![GitHub forks](https://img.shields.io/github/forks/chicho69-cesar/learning-astro)
+![GitHub PRs](https://img.shields.io/github/issues-pr/chicho69-cesar/learning-astro)
 
 </div>
 
@@ -55,7 +54,7 @@ Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz J
 
 ## 🚀 Empezar
 
-### 1. Usa este [repo](https://github.com/midudev/minimalist-portfolio-json) como _template_ de un proyecto de Astro
+### 1. Usa este [repo](https://github.com/chicho69-cesar/learning-astro) como _template_ de un proyecto de Astro
 
 - Yo uso [pnpm](https://pnpm.io/installation) como gestor de dependencias y empaquetador.
 
@@ -65,7 +64,7 @@ corepack enable
 corepack prepare pnpm@latest --activate
 
 # Inicializa el proyecto
-pnpm create astro@latest -- --template midudev/minimalist-portfolio-json
+pnpm create astro@latest -- --template chicho69-cesar/learning-astro
 ```
 
 ### 2. Añade tu contenido:
@@ -83,12 +82,12 @@ pnpm dev
 
 ## 🧞 Comandos
 
-|     | Comando          | Acción                                        |
-| :-- | :--------------- | :-------------------------------------------- |
-| ⚙️  | `dev` o `start` | Lanza un servidor de desarrollo local en  `localhost:4321`.  |
-| ⚙️  | `build`          | Comprueba posibles errores y hace un empaquetado de producción en `./dist/`.      |
-| ⚙️  | `preview`        | Vista previa en local `localhost:4321` |
+|     | Comando         | Acción                                                                       |
+| :-- | :-------------- | :--------------------------------------------------------------------------- |
+| ⚙️  | `dev` o `start` | Lanza un servidor de desarrollo local en `localhost:4321`.                   |
+| ⚙️  | `build`         | Comprueba posibles errores y hace un empaquetado de producción en `./dist/`. |
+| ⚙️  | `preview`       | Vista previa en local `localhost:4321`                                       |
 
 ## 🔑 Licencia
 
-[MIT](LICENSE.txt) - Creado por [**Cesar**](https://github.com/chicho69-cesar).
+[MIT](LICENSE.txt) - Creado por [**chicho69-cesar**](https://github.com/chicho69-chicho69-cesar).
