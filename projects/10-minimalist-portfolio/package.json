@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@astrojs/check": "0.3.4",
-    "astro": "4.0.8",
+    "astro": "4.14.5",
     "ninja-keys": "1.2.2",
     "typescript": "5.3.3"
   }

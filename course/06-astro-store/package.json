@@ -19,7 +19,7 @@
     "@nanostores/react": "0.7.3",
     "@types/react": "18.2.45",
     "@types/react-dom": "18.2.18",
-    "astro": "4.14.2",
+    "astro": "4.14.5",
     "auth-astro": "4.1.0",
     "bcryptjs": "2.4.3",
     "cloudinary": "2.4.0",
