@@ -1,17 +1,32 @@
 ---
+import { actions } from 'astro:actions';
 import MainLayout from '@/layouts/MainLayout.astro';
-import { getSession } from 'auth-astro/server';
+import Pagination from '@/components/shared/Pagination.astro';
+import { ProductList } from '@/components';
 
-const session = await getSession(Astro.request);
-const { user } = session ?? {};
+const searchParams = Astro.url.searchParams;
+const pageParam = Number(searchParams.get('page') ?? 1);
+
+const { data, error } = await actions.getProductsByPage.safe({
+  page: pageParam,
+});
+
+if (error) {
+  return Astro.redirect('/');
+}
+
+const { products, totalPages } = data;
 ---
 
 <MainLayout>
-  <h1 class="text-3xl">Home Page</h1>
+  <h1 class="text-3xl">Listado de productos</h1>
 
-  <pre>
-    <code>
-      { JSON.stringify(user) }
-    </code>
-  </pre>
+  <ProductList
+    products={products}
+    client:idle
+  />
+
+  <Pagination
+    totalPages={totalPages}
+  />
 </MainLayout>
