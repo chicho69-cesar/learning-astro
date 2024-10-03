@@ -11,15 +11,23 @@ if (error) {
 }
 
 const { product, images } = data;
+
+const image = images[0].image.startsWith('http')
+  ? images[0].image
+  : `${import.meta.env.PUBLIC_URL}/images/products/${images[0].image}`;
 ---
 
-<MainLayout title={product.title} description={product.description}>
+<MainLayout
+  title={product.title}
+  description={product.description}
+  image={image}
+>
   <!-- image={image} -->
 
   <!-- <h1>{product.title}</h1> -->
 
   <div class="grid grid-cols-1 md:grid-cols-3 w-full gap-4">
-    <ProductSlideshow images={images} />
+    <ProductSlideshow images={images.map((i: any) => i.image)} />
 
     <section>
       <h2 class="text-2xl font-bold">{product.title}</h2>
@@ -42,7 +50,7 @@ const { product, images } = data;
         <button class="btn-quantity">+</button>
       </div>
 
-      <button class="mt-5 bg-blue-500 text-white p-3 w-full">
+      <button class="mt-5 bg-blue-500 text-white p-3 w-full disabled:bg-gray-500">
         Añadir al carrito
       </button>
 
@@ -55,47 +63,62 @@ const { product, images } = data;
 </MainLayout>
 
 <script>
-  const sizeElements = document.querySelectorAll('li');
+  import { CartCookiesClient } from '@/utils';
+  import { itemsInCart } from '@/store';
+  import { navigate } from 'astro:transitions/client';
 
-  sizeElements.forEach((liElement) => {
-    liElement.addEventListener('click', () => {
-      sizeElements.forEach((s) => s.classList.remove('selected-size'));
-      liElement.classList.add('selected-size');
+  document.addEventListener('astro:page-load', () => {
+    const sizeElements = document.querySelectorAll('li');
+
+    sizeElements.forEach((liElement) => {
+      liElement.addEventListener('click', () => {
+        sizeElements.forEach((s) => s.classList.remove('selected-size'));
+        liElement.classList.add('selected-size');
+      });
     });
-  });
 
-  const quantityInput = document.querySelector('input') as HTMLInputElement;
-  const productIdInput = document.querySelector(
-    '#product-id'
-  ) as HTMLInputElement;
+    const quantityInput = document.querySelector('input') as HTMLInputElement;
+    const productIdInput = document.querySelector(
+      '#product-id'
+    ) as HTMLInputElement;
 
-  let quantity = 1;
+    let quantity = 1;
 
-  const [decrementButton, incrementButton, addToCardButton] =
-    document.querySelectorAll('button');
+    const [decrementButton, incrementButton, addToCardButton] =
+      document.querySelectorAll('button');
 
-  incrementButton.addEventListener('click', () => {
-    quantity = Math.min(quantity + 1, 5);
-    quantityInput.value = quantity.toString();
-  });
+    if (!incrementButton || !quantityInput) return;
 
-  decrementButton.addEventListener('click', () => {
-    quantity = Math.max(quantity - 1, 1);
-    quantityInput.value = quantity.toString();
-  });
+    incrementButton.addEventListener('click', () => {
+      quantity = Math.min(quantity + 1, 5);
+      quantityInput.value = quantity.toString();
+    });
 
-  addToCardButton.addEventListener('click', () => {
-    const size = document.querySelector('.selected-size')?.textContent;
-    if (!size) {
-      return alert('Seleccione una talla');
-    }
+    decrementButton.addEventListener('click', () => {
+      quantity = Math.max(quantity - 1, 1);
+      quantityInput.value = quantity.toString();
+    });
 
-    addToCardButton.disabled = true;
+    addToCardButton.addEventListener('click', async () => {
+      const size = document.querySelector('.selected-size')?.textContent;
+      
+      if (!size) {
+        return alert('Seleccione una talla');
+      }
 
-    console.log({
-      id: productIdInput.value,
-      size: size,
-      quantity: quantity,
+      addToCardButton.disabled = true;
+      
+      const cart = CartCookiesClient.addItem({
+        productId: productIdInput.value,
+        size: size,
+        quantity: quantity,
+      });
+
+      itemsInCart.set(cart.length);
+      
+      // TODO: cambiar luego cuando tengamos los ViewTransitions
+      // window.location.href = '/cart';
+      await navigate('/cart');
     });
   });
 </script>
