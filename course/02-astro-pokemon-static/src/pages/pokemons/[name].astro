@@ -7,6 +7,9 @@ import Title from '@/components/shared/Title.astro';
 import HeartOutline from '@/icons/HeartOutline.astro';
 import HeartFull from '@/icons/HeartFull.astro';
 
+/* La función getStaticPaths en un sitio estatico nos permite crear todas las rutas
+que compondran la aplicación, en este caso acorde con el numero de elementos que nos
+regrese la petición http */
 export const getStaticPaths = (async () => {
   const resp = await fetch('https://pokeapi.co/api/v2/pokemon?limit=151');
   const { results } = (await resp.json()) as PokemonListResponse;

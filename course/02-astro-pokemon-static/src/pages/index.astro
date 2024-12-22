@@ -4,6 +4,9 @@ import PokemonCard from '../components/pokemons/PokemonCard.astro';
 import type { PokemonListResponse } from '../interfaces/pokemon-list.response';
 import MainLayout from '../layouts/MainLayout.astro';
 
+/* Al ser esta una pagina que se genera de forma estatica, podemos hacer una petición
+http desde la misma sin ningun problema, ya esta petición solo se hara una vez
+al momento de hacer build de la pagina */
 const resp = await fetch('https://pokeapi.co/api/v2/pokemon');
 const data = (await resp.json()) as PokemonListResponse;
 

@@ -10,6 +10,11 @@ export default function FavoritePokemonCard({ pokemon }: Props) {
 
   const imageSrc = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`;
 
+  /* En este caso como en el anterior usamos una isla, por dos razones, una que
+  este componente se usara como hijo de otra isla y no se puede usar un componente de
+  astro como hijo de una isla. Y segundo porque manipulamos la información que esta
+  guardada en el localstorage, y dicha información no se puede manipular directamente
+  desde un componente de astro */
   const deleteFavorite = () => {
     const favorites = JSON.parse(
       localStorage.getItem('favorites') ?? '[]'
