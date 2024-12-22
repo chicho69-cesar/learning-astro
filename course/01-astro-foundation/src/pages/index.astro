@@ -17,6 +17,8 @@ const currentDate = new Date();
 	<footer>Año: 2023</footer>
 
 	<script>
+		/* Los scripts que agregamos en los componentes de Astro solo se ejecutan en el cliente
+		una vez que el componente es renderizado. */
 		// Client Only
 
 		const currentTimeParagraph = document.querySelector("#current-time") as HTMLParagraphElement;

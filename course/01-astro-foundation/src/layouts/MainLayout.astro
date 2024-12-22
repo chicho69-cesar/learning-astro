@@ -1,6 +1,8 @@
 ---
+/* Importamos los estilos globales */
 import "../styles/global.css";
 
+/* Importamos las ViewTransitions */
 import { ViewTransitions } from "astro:transitions";
 import Navbar from "../components/Navbar.astro";
 
@@ -20,6 +22,7 @@ const { title } = Astro.props;
     
     <title>{title}</title>
 
+    <!-- Definimos las ViewTransitions para la pagina -->
     <ViewTransitions />
   </head>
 
