@@ -2,7 +2,12 @@
 import { Counter } from '../components/Counter';
 import MainLayout from '../layouts/MainLayout.astro';
 
+/* Cuando usamos prerender en true que es el valor por defecto le indicamos a 
+Astro que la pagina va a ser prerenderizada y se va a mostrar de forma estática.
+Si lo usamos el false quiere decir que la pagina va a ser dinámica y se va a generar
+del lado del servidor. */
 // export const prerender = false;
+
 const counterValue = 4321;
 console.log({ counterValue });
 ---

@@ -1,10 +1,14 @@
 ---
+/* Creamos un Layout para usarlo en diferentes rutas de la pagina */
+
 import Navbar from '../components/Navbar.astro';
 
+/* Definimos las props del componente */
 interface Props {
   title: string;
 }
 
+/* Extraemos las props del componente */
 const { title } = Astro.props;
 ---
 

@@ -1,3 +1,6 @@
+/* Creamos un astro island, es decir, un componente que lo creamos usando un 
+framework/librería Front-End como React, Vue, Angular, Svelte, Solid, Qwik, Preat, etc. */
+
 import { useState } from 'react';
 
 interface Props {
