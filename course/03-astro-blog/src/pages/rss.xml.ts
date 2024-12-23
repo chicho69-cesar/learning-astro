@@ -2,6 +2,7 @@ import rss from '@astrojs/rss';
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 
+// Exportamos una función para obtener la información de nuestro feed RSS
 export const GET: APIRoute = async ({ params, request, site }) => {
   const blogPosts = await getCollection('blog') as any[];
 

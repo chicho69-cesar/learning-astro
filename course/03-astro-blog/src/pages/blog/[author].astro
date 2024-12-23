@@ -10,6 +10,8 @@ export const getStaticPaths = (async () => {
   //  const authors = await getCollection('author')
   //  const posts =  await getCollection('blog')
 
+  /* Podemos extraer la información de las colecciones en paralelo
+  para que sea de forma mucho más rápida */
   const [authors, posts] = await Promise.all([
     getCollection('author'),
     getCollection('blog'),

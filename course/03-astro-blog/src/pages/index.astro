@@ -4,6 +4,8 @@ import { siteConfig } from '../config/site-config';
 import MainLayout from '../layouts/MainLayout.astro';
 import TypedBlogPost from '@/components/TypedBlogPost.astro';
 
+/* Obtenemos los posts de nuestra colección utilizando una condición, en este 
+caso que isDraft sea false */
 const blogPosts = await getCollection(
   'blog',
   (post: any) => post.data.isDraft === false

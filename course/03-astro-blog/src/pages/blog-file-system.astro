@@ -3,6 +3,8 @@ import BlogPost from '../components/BlogPost.astro';
 import { siteConfig } from '../config/site-config';
 import MainLayout from '../layouts/MainLayout.astro';
 
+/* Obtenemos los posts de nuestro blog pero usando los archivos en lugar
+de utilizar las colecciones */
 const posts = await Astro.glob('./posts-old/*.{md,mdx}');
 ---
 

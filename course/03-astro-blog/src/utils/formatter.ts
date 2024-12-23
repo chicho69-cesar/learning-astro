@@ -1,3 +1,5 @@
+/* Creamos una clase Formatter para darle formato a los elementos
+que componentes los archivos de las colecciones */
 export class Formatter {
   static formatDate(value: Date): string {
     const date = new Date(value);

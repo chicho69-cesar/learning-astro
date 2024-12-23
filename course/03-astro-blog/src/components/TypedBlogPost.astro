@@ -12,6 +12,11 @@ const frontmatter = post.data;
 ---
 
 <div class="lg:flex">
+  <!--
+    Usamos un componente Image para cargar la imagen de nuestro post, con
+    un ancho y alto de 500 px, calidad baja y lazy loading para mejorar 
+    el rendimiento de nuestra página.
+  -->
   <Image
     class="object-cover w-full h-56 rounded-lg lg:w-64"
     src={frontmatter.image}

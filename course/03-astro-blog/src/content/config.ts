@@ -1,5 +1,7 @@
 import { defineCollection, reference, z } from 'astro:content';
 
+/* Creamos la definición y el esquema de la colección para los blogs,
+esta colección es de tipo contenido y además definimos su contenido. */
 const blogCollection = defineCollection({
   type: 'content',
   schema: ({ image }) =>
@@ -23,6 +25,8 @@ const blogCollection = defineCollection({
     }),
 });
 
+/* Creamos la definición y el esquema de la colección para los autores,
+esta colección es de tipo data y además definimos su contenido. */
 const authorCollection = defineCollection({
   type: 'data',
   schema: ({ image }) =>
