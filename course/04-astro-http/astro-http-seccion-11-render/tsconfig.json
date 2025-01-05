@@ -1,0 +1,16 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "baseUrl": ".",
+    "paths": {
+      "@db": [
+        "src/db"
+      ],
+      "@*": [
+        "src/*"
+      ]
+    },
+    "jsx": "preserve"
+  }
+}

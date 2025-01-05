@@ -1,0 +1,35 @@
+{
+  "name": "05-astro-http",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start:dev": "astro dev",
+    "start:old": "HOST=0.0.0.0 PORT=8080 NODE_ENV=production node ./dist/server/entry.mjs",
+    "start": "node ./dist/server/entry.mjs",
+    "build": "npm run prisma:generate && astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "prisma:generate": "prisma generate"
+  },
+  "dependencies": {
+    "@astrojs/check": "0.9.4",
+    "@astrojs/mdx": "3.1.9",
+    "@astrojs/node": "8.3.4",
+    "@astrojs/rss": "4.0.9",
+    "@astrojs/sitemap": "3.2.1",
+    "@astrojs/vue": "4.5.2",
+    "@prisma/client": "5.21.1",
+    "astro": "4.16.8",
+    "canvas-confetti": "1.9.3",
+    "lodash.debounce": "4.0.8",
+    "typescript": "5.6.3",
+    "uuid": "11.0.2",
+    "vue": "3.5.12"
+  },
+  "devDependencies": {
+    "@types/canvas-confetti": "1.6.4",
+    "@types/lodash.debounce": "4.0.9",
+    "prisma": "5.21.1"
+  }
+}
