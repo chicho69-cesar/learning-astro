@@ -11,7 +11,7 @@ import db from '@astrojs/db';
 export default defineConfig( {
   site: 'https://example.com',
   integrations: [ mdx(), sitemap(), vue(), db() ],
-  output: 'hybrid',
+  output: 'static',
   adapter: cloudflare(),
 
   // Desde la versión 4.15, ya no es experimental

@@ -15,7 +15,7 @@ export default defineConfig( {
   integrations: [ mdx(), sitemap(), vue() ],
 
   // adapter: cloudflare()
-  output: "hybrid",
+  output: 'static',
 
   adapter: node( {
     mode: 'standalone',

@@ -10,19 +10,19 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/react": "3.0.8",
-    "@astrojs/svelte": "5.0.2",
-    "@astrojs/tailwind": "5.0.4",
-    "@astrojs/vercel": "6.1.1",
-    "@radix-ui/react-slider": "1.1.2",
-    "@types/react": "18.2.45",
-    "@types/react-dom": "18.2.18",
-    "astro": "4.14.5",
-    "clsx": "2.1.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "svelte": "4.2.8",
-    "tailwindcss": "3.4.0",
-    "zustand": "4.4.7"
+    "@astrojs/react": "4.1.5",
+    "@astrojs/svelte": "7.0.3",
+    "@astrojs/tailwind": "5.1.4",
+    "@astrojs/vercel": "8.0.2",
+    "@radix-ui/react-slider": "1.2.2",
+    "@types/react": "19.0.7",
+    "@types/react-dom": "19.0.3",
+    "astro": "5.1.7",
+    "clsx": "2.1.1",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "svelte": "5.18.0",
+    "tailwindcss": "3.4.17",
+    "zustand": "5.0.3"
   }
 }

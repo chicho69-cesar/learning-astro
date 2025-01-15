@@ -3,10 +3,6 @@ import { getCollection } from 'astro:content'
 import BlogPost from '../components/BlogPost.astro'
 import Layout from '../layouts/Layout.astro'
 
-/* Con Astro.glob() podemos adquirir la data de los archivos de algún
-directorio de la carpeta pages, en este caso obtenemos la data de los 
-posts markdown de la carpeta posts */
-// const allPosts = await Astro.glob('./posts/*.md')
 const allPosts = await getCollection('posts')
 ---
 

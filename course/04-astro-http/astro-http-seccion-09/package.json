@@ -10,12 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "0.7.0",
-    "@astrojs/cloudflare": "10.4.1",
-    "@astrojs/mdx": "3.1.1",
-    "@astrojs/rss": "4.0.6",
-    "@astrojs/sitemap": "3.1.6",
-    "astro": "4.10.3",
-    "typescript": "5.4.5"
+    "@astrojs/check": "0.9.4",
+    "@astrojs/cloudflare": "12.2.0",
+    "@astrojs/mdx": "4.0.6",
+    "@astrojs/rss": "4.0.11",
+    "@astrojs/sitemap": "3.2.1",
+    "astro": "5.1.7",
+    "typescript": "5.7.3"
   }
 }

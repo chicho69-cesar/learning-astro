@@ -1,6 +1,6 @@
-import { defineConfig } from 'astro/config'
-import tailwind from '@astrojs/tailwind'
 import preact from '@astrojs/preact'
+import tailwind from '@astrojs/tailwind'
+import { defineConfig } from 'astro/config'
 
 // https://astro.build/config
 export default defineConfig({
@@ -8,5 +8,5 @@ export default defineConfig({
     tailwind(),
     preact(),
   ], // Agregamos integraciones
-  output: 'hybrid' // Activamos server side rendering, options: [ 'server' | 'hybrid' | 'client']
+  output: 'static' // Activamos server side rendering, options: [ 'server' | 'static']
 })

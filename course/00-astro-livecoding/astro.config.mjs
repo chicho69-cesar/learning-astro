@@ -11,9 +11,8 @@ export default defineConfig({
     tailwind(),
     react()
   ],
-  /* Definimos el modo de salida, en este caso híbrido, es decir, que podemos 
-  tener contenido estático y contenido generado del lado del servidor */
-  output: 'hybrid',
+  /* Definimos el modo de salida, en este caso static */
+  output: 'static',
   // Configuración de la integración de node
   adapter: node({
     mode: 'standalone'
