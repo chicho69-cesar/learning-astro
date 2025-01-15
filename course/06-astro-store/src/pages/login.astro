@@ -112,7 +112,7 @@ import AuthLayout from '@/layouts/AuthLayout.astro';
     btnSubmit.setAttribute('disabled', 'disabled');
 
     const formData = new FormData(form);
-    // const { error } = await actions.loginUser.safe(formData);
+    // const { error } = await actions.loginUser(formData);
 
     const resp = await signIn('credentials', {
       email: formData.get('email') as string,

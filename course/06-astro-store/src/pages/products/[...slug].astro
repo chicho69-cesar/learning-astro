@@ -4,7 +4,7 @@ import ProductSlideshow from '@/components/products/ProductSlideshow.astro';
 import { actions } from 'astro:actions';
 
 const { slug } = Astro.params;
-const { data, error } = await actions.getProductBySlug.safe(slug ?? '');
+const { data, error } = await actions.getProductBySlug(slug ?? '');
 
 if (error) {
   return Astro.redirect('/404');

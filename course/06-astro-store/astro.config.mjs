@@ -10,7 +10,4 @@ export default defineConfig({
   integrations: [tailwind(), db(), auth(), react()],
   output: 'server',
   adapter: netlify(),
-  experimental: {
-    actions: true,
-  }
 });
